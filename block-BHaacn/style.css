@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------------------- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.padding {
+    padding: 3rem 0;
+}
+.btn {
+    color: #fff;
+    background-color: rgb(253, 19, 19);
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 18px;
+}
+.width-full {
+    width: 100%;
+}
+.flex-45 {
+    flex: 0 1 45%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-15 {
+    flex: 0 1 15%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-55 {
+    flex: 0 1 55%;
+}
+/* -------------------------------- */
+.header {
+    background: linear-gradient(rgba(48, 3, 252, 0.9), rgba(74, 36, 247, 0.5)), url(./assets/banner.png) no-repeat center;
+    color: #fff;
+}
+.navbar {
+    padding-top: 1rem;
+}
+.menu a {
+    margin-left: 3rem;
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+}
+.activ {
+    color: rgb(253, 19, 19);
+}
+.hero p {
+    margin: 2rem 0;
+}
+/* ---------------------------------- */
+.sub-hero p {
+    margin-bottom: 1rem;
+}
+/* ----------------------------------- */
+.why-join {
+    background-color: rgba(162, 180, 233, 0.4);
+}
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.box-1 {
+    border: 3px dashed red;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.box-1 p {
+    color: rgb(78, 78, 78);
+}
+.date-circle {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(253, 19, 19);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 140px;
+    color: #fff;
+}
+.blank-circle {
+    border: 2px dashed rgb(253, 19, 19);
+    background-color: #fff;
+    color: rgb(253, 19, 19);
+}
+.flex-20 img {
+    border-radius: 6px;
+    width: 80%;
+}
+.download {
+    text-align: center;
+}
+/* --------------------- */
+.num {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.text {
+    font-size: 1.6rem;
+}
+.logos{
+    text-align: center;
+}
+.active {
+    background-color: rgb(253, 19, 19);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.logo {
+    background-color: rgba(162, 180, 233, 0.4);
+}
+.video-type{
+    background: url('./assets/banner.png') no-repeat;
+    width: 100vw;
+    height: 70vh;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+}
+/* -------------------------- */
+.read-more {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.latest-news{
+    background-color: rgba(162, 180, 233, 0.4);
+}
+.latest-news p{
+    color: gray;
+    font-size: 1rem;
+    margin: 12px 0;
+}
+.links {
+    color: gray;
+}
+/* -------------------------- */
+.footer{
+    background-color: rgb(37, 37, 141);
+}
+.footer h5{
+    color: #fff;
+}
+ion-icon {
+    color: rgb(158, 158, 158);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.last-footer{
+    text-align: center;
+    color: gray;
+    background-color: rgb(3, 3, 85);
+    padding: 24px 0;
+}
