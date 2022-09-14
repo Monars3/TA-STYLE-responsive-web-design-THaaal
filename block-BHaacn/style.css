@@ -67,6 +67,8 @@ body {
 }
 .flex {
     display: flex;
+}
+.justify-between { 
     justify-content: space-between;
     align-items: center;
 }
@@ -77,6 +79,9 @@ a {
 }
 .padding {
     padding: 3rem 0;
+}
+.item-center {
+    align-items: center;
 }
 .btn {
     color: #fff;
@@ -106,10 +111,16 @@ a {
 .flex-55 {
     flex: 0 1 55%;
 }
+.flex-50 {
+    flex: 0 1 50%;
+}
+
 /* -------------------------------- */
 .header {
-    background: linear-gradient(rgba(48, 3, 252, 0.9), rgba(74, 36, 247, 0.5)), url(./assets/banner.png) no-repeat center;
+    background: linear-gradient(rgba(48, 3, 252, 0.9), rgba(74, 36, 247, 0.5)), url(./assets/banner.png) no-repeat;
+    background-size: cover;
     color: #fff;
+    height: 100vh;
 }
 .navbar {
     padding-top: 1rem;
@@ -117,6 +128,9 @@ a {
 .menu a {
     margin-left: 3rem;
     font-size: 1rem;
+}
+#toggle, .bars {
+    display: none;
 }
 h1 {
     font-size: 1.7rem;
@@ -161,12 +175,12 @@ h4 {
     color: rgb(78, 78, 78);
 }
 .date-circle {
-    width: 140px;
-    height: 140px;
+    width: 9rem;
+    height: 9rem;
     background-color: rgb(253, 19, 19);
     border-radius: 50%;
     text-align: center;
-    line-height: 140px;
+    line-height: 9rem;
     color: #fff;
 }
 .blank-circle {
@@ -234,7 +248,7 @@ h5 {
 .latest-news p{
     color: gray;
     font-size: 1rem;
-    margin: 12px 0;
+    margin: 1rem 0;
 }
 .links {
     color: gray;
@@ -246,7 +260,7 @@ h5 {
 .footer h5{
     color: #fff;
 }
-ion-icon {
+.social-media {
     color: rgb(158, 158, 158);
     font-size: 1.5rem;
     margin-right: 1rem;
@@ -256,4 +270,55 @@ ion-icon {
     color: gray;
     background-color: rgb(3, 3, 85);
     padding: 24px 0;
+}
+/* ------------------------------- */
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .container{
+        max-width: 960px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .container{
+        max-width: 720px;
+    }
+    .menu {
+        display: none;
+    }
+    #toggle:checked ~ .menu {
+        display: inline-block;
+    }
+    .bars {
+        font-size: 2rem;
+        color: #fff;
+        display: inline-block;
+    }
+    
+    .sm-width-full {
+        width: 100%;
+    }
+    .flex-100 {
+        flex: 0 1 100%;
+        margin: 2rem 0;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .order-1 {
+        order: 1;
+    }
+    .hero-img {
+        max-height: 400px;
+        object-fit: cover;
+    }
 }

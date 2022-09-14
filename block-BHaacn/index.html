@@ -10,9 +10,13 @@
 </head>
 <body>
     <header class="header">
-        <div class="container flex navbar">
+        <div class="container flex justify-between navbar">
             <h1>Alt Events</h1>
-            <nav class="menu">
+            <label class="bars" for="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+            <input id="toggle" type="checkbox">
+            <nav class="menu item-center .sm-column">
                 <a href="#">HOME</a>
                 <a href="#">ABOUT</a>
                 <a href="#">SERVICES</a>
@@ -20,8 +24,8 @@
                 <a href="#" class="btn">Join Us</a>
             </nav>
         </div>
-        <section class="container flex hero padding">
-            <div class="flex-45">
+        <section class="container flex justify-between hero padding wrap">
+            <div class="flex-45 flex-100 order-1">
                 <h2>Web Developer <br>Conference <span class="activ">2020</span></h2>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since
                     the 1500s, when an unknown printer took a gallery of type and
@@ -29,17 +33,17 @@
                 </p>
                 <a href="#" class="btn">Register Now</a>
             </div>
-            <div class="flex-30">
-                <img class="width-full" src="./assets/hero.png" alt="image">
+            <div class="flex-30 flex-100">
+                <img class="width-full sm-width-full order-1 hero-img" src="./assets/hero.png" alt="image">
             </div>
         </section>
     </header>
     <main>
-        <section class="container flex padding sub-hero">
-            <div class="flex-45">
-                <img class="width-full" src="./assets/about.png" alt="about">
+        <section class="container flex justify-between padding sub-hero wrap">
+            <div class="flex-45 flex-100">
+                <img class="width-full sm-width-full" src="./assets/about.png" alt="about">
             </div>
-            <div class="flex-45">
+            <div class="flex-45 flex-100 wrap">
                 <h2>ABOUT THE EVENT</h2>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since
                     the 1500s, when an unknown printer took a gallery of type and
@@ -50,22 +54,22 @@
         </section>
         <section class="why-join padding">
             <h3>Why You Should Join</h3>
-            <article class="flex container">
-                <div class="box-1 flex-30">
+            <article class="flex justify-between container wrap">
+                <div class="box-1 flex-30 flex-100">
                     <h4>Network</h4>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
                         scrambled it to make a type specimen book.
                     </p>
                 </div>
-                <div class="box-1 flex-30">
+                <div class="box-1 flex-30 flex-100">
                     <h4>Great Speakers</h4>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
                         scrambled it to make a type specimen book.
                     </p>
                 </div>
-                <div class="box-1 flex-30">
+                <div class="box-1 flex-30 flex-100">
                     <h4>Information</h4>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
@@ -77,7 +81,7 @@
         <section class="schedule" >
             <article>
                 <h3 class="padding">Schedule</h3>
-                <div class="flex container ">
+                <div class="flex justify-between container ">
                     <div class="flex-15">
                         <h4 class="date-circle">06 Sept</h4>
                     </div>
@@ -92,7 +96,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex container padding">
+                <div class="flex justify-between container padding">
                     <div class="flex-15">
                         <h4 class="date-circle blank-circle">07 Sept</h4>
                     </div>
@@ -107,7 +111,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex container ">
+                <div class="flex justify-between container ">
                     <div class="flex-15">
                         <h4 class="date-circle blank-circle">08 Sept</h4>
                     </div>
@@ -122,7 +126,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex container padding ">
+                <div class="flex justify-between container padding ">
                     <div class="flex-15">
                         <h4 class="date-circle blank-circle">09 Sept</h4>
                     </div>
@@ -143,23 +147,23 @@
             </article>
         </section>
         <section>
-            <article class="container flex padding logo">
-                <div class="flex-25 logos">
+            <article class="container flex justify-between padding logo wrap">
+                <div class="flex-25 flex-100 logos">
                     <img src="./assets/speaker.png" alt="">
                     <p class="num">20+</p>
                     <p class="text">Great Speakers</p>
                 </div>
-                <div class="flex-25 logos active">
+                <div class="flex-25 flex-100 logos active">
                     <img class="widt-full " src="./assets/idea.png" alt="">
                     <p class="num">50+</p>
                     <p class="text">Total Topic</p>
                 </div>
-                <div class="flex-25 logos">
+                <div class="flex-25 flex-100 logos">
                     <img class="widt-full" src="./assets/participants.png" alt="">
                     <p class="num">300+</p>
                     <p class="text">participants</p>
                 </div>
-                <div class="flex-25 logos">
+                <div class="flex-25 flex-100 logos">
                     <img class="widt-full" src="./assets/sponsor.png" alt="">
                     <p class="num">20+</p>
                     <p class="text">Sponsors</p>
@@ -172,9 +176,9 @@
         </section>
         <section class="padding latest-news">
             <h3>Our Latest News</h3>
-            <article class="container flex">
-                <div class="flex-30">
-                    <img src="./assets/news-01.png" alt="">
+            <article class="container flex justify-between wrap">
+                <div class="flex-30 flex-100">
+                    <img class="width-full" src="./assets/news-01.png" alt="">
                     <h5>How to build a great portfolio as a beginner developer</h5>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
@@ -182,8 +186,8 @@
                     </p>
                     <a class="read-more" href="#">Read More</a>
                 </div>
-                <div class="flex-30">
-                    <img src="./assets/news-02.png" alt="">
+                <div class="flex-30 flex-100">
+                    <img class="width-full" src="./assets/news-02.png" alt="">
                     <h5>4 common situations while using Git and how to solve them</h5>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
@@ -191,8 +195,8 @@
                     </p>
                     <a class="read-more" href="#">Read More</a>
                 </div>
-                <div class="flex-30">
-                    <img src="./assets/news-03.png" alt="">
+                <div class="flex-30 flex-100">
+                    <img class="width-full" src="./assets/news-03.png" alt="">
                     <h5>Basic Unix commands that you should know</h5>
                     <p>Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s, when an unknown printer took a gallery of type and
@@ -205,7 +209,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container flex padding">
+        <div class="container flex justify-between padding">
             <nav>
                 <img src="./assets/footer-logo.png" alt="">
             </nav>
@@ -221,8 +225,8 @@
             <div class="flex-25">
                 <h5>Follow Us</h5>
                 <nav>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon class="social-media" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social-media" name="logo-twitter"></ion-icon>
                 </nav>
             </div>
         </div>
